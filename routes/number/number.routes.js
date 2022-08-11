@@ -3,10 +3,10 @@ const express = require("express");
 const router = express.Router();
 const NumberController  = require('../../controllers/number/number.controllers')
 
-router.get("/number", async (req, res) =>{
+router.get("/", async (req, res) =>{
     try{
-        const number = await NumberController.getNumber();
-        res.send(number);
+        const chislo = await NumberController.getNumber();
+        res.send(chislo);
     } catch (e){
         console.log(e)
     }

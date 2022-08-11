@@ -1,8 +1,8 @@
-let number = 69;
+let chislo = 69;
 class NumberServices {
     getNumber() {
         return new Promise((resolve, reject) => {
-            resolve (number)
+            resolve (chislo)
         });
     }
 }

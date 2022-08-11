@@ -1,8 +1,8 @@
 let veryBigNumber = 234n;
 class BigIntServices {
     getBigInt() {
-        return new Promise((resolve, reject) => {
-            resolve (veryBigNumber)
+        return new Promise((res, rej) => {
+            res(veryBigNumber)
         });
     }
 }

@@ -1,14 +1,17 @@
-
 const express = require("express");
 const router = express.Router();
-const bigIntController = require('../../controllers/bigInt/bigInt.controllers')
+const BigIntController = require('../../controllers/bigInt/bigInt.controllers')
 
-router.get("/veryBigNumber", async (req, res) =>{ 
+router.get("/", async (req, res) =>{ 
     try {
-const bigInt = await bigIntController.getBigInt();
-res.send(bigInt) 
+const veryBigNumber = await BigIntController.getBigInt();
+res.send(veryBigNumber);
 } catch(e){
     console.log(e);
 }
 }); 
 module.exports = router;
+
+
+
+
