@@ -6,7 +6,7 @@ const NumberController  = require('../../controllers/number/number.controllers')
 router.get("/", async (req, res) =>{
     try{
         const chislo = await NumberController.getNumber();
-        res.send(chislo);
+        res.send(JSON.stringify(chislo));
     } catch (e){
         console.log(e)
     }

@@ -5,7 +5,7 @@ const BigIntController = require('../../controllers/bigInt/bigInt.controllers')
 router.get("/", async (req, res) =>{ 
     try {
 const veryBigNumber = await BigIntController.getBigInt();
-res.send(veryBigNumber);
+res.send(JSON.stringify(veryBigNumber.toString()));
 } catch(e){
     console.log(e);
 }

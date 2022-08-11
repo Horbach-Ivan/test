@@ -1,8 +1,8 @@
 const BigIntServices = require('../../services/bigInt/bigInt.services')
 class BigIntController {
     async getBigInt() {
-        let bigInt =  await BigIntServices.getBigInt();
-        return bigInt
+        let veryBigNumber =  await BigIntServices.getBigInt();
+        return veryBigNumber
     }
 }
 
